@@ -1,0 +1,103 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do lab_11_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/altera/13.1/quartus/bin64/work/lab_11.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity lab_11
+# -- Compiling architecture FSMD of lab_11
+# 
+# vcom -93 -work work {C:/altera/13.1/quartus/bin64/work/lab_11_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity lab_11_tb
+# -- Compiling architecture dataflow of lab_11_tb
+# -- Loading package LPM_COMPONENTS
+# -- Loading entity lab_11
+# ** Warning: [4] C:/altera/13.1/quartus/bin64/work/lab_11_tb.vhd(25): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/altera/13.1/quartus/bin64/work/lab_11_tb.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/altera/13.1/quartus/bin64/work/lab_11_tb.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs="+acc"  lab_11_tb
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs=\"+acc\" -t 1ps lab_11_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading lpm.lpm_components
+# Loading work.lab_11_tb(dataflow)
+# Loading work.lab_11(fsmd)
+# Loading lpm.lpm_common_conversion(body)
+# Loading lpm.lpm_device_families(body)
+# Loading lpm.lpm_ram_dq(lpm_syn)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /lab_11_tb/lab_11_tb_unit/memory
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /lab_11_tb/lab_11_tb_unit/memory
+# ** Error: Unknown intended_device_family UNUSED
+#    Time: 0 ps  Iteration: 0  Instance: /lab_11_tb/lab_11_tb_unit/memory
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 2  Instance: /lab_11_tb/lab_11_tb_unit/memory
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 2  Instance: /lab_11_tb/lab_11_tb_unit/memory
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 100 ns  Iteration: 0  Instance: /lab_11_tb/lab_11_tb_unit/memory
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 100 ns  Iteration: 0  Instance: /lab_11_tb/lab_11_tb_unit/memory
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 150 ns  Iteration: 0  Instance: /lab_11_tb/lab_11_tb_unit/memory
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 150 ns  Iteration: 0  Instance: /lab_11_tb/lab_11_tb_unit/memory
+add wave -position end  sim:/lab_11_tb/lab_11_tb_unit/state
+add wave -position end  sim:/lab_11_tb/lab_11_tb_unit/IR
+add wave -position end  sim:/lab_11_tb/lab_11_tb_unit/PC
+add wave -position end  sim:/lab_11_tb/lab_11_tb_unit/A
+add wave -position end  sim:/lab_11_tb/lab_11_tb_unit/memory_address
+add wave -position end  sim:/lab_11_tb/lab_11_tb_unit/memory_data
+add wave -position end  sim:/lab_11_tb/lab_11_tb_unit/En
+restart -f
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /lab_11_tb/lab_11_tb_unit/memory
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /lab_11_tb/lab_11_tb_unit/memory
+# ** Error: Unknown intended_device_family UNUSED
+#    Time: 0 ps  Iteration: 0  Instance: /lab_11_tb/lab_11_tb_unit/memory
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 2  Instance: /lab_11_tb/lab_11_tb_unit/memory
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 2  Instance: /lab_11_tb/lab_11_tb_unit/memory
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 100 ns  Iteration: 0  Instance: /lab_11_tb/lab_11_tb_unit/memory
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 100 ns  Iteration: 0  Instance: /lab_11_tb/lab_11_tb_unit/memory
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 150 ns  Iteration: 0  Instance: /lab_11_tb/lab_11_tb_unit/memory
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 150 ns  Iteration: 0  Instance: /lab_11_tb/lab_11_tb_unit/memory

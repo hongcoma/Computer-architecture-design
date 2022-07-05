@@ -1,0 +1,44 @@
+|RamAnalysis
+data_in[0] => ram_block.DATAIN
+data_in[1] => ram_block.DATAIN1
+data_in[2] => ram_block.DATAIN2
+data_in[3] => ram_block.DATAIN3
+data_in[4] => ram_block.DATAIN4
+data_in[5] => ram_block.DATAIN5
+data_in[6] => ram_block.DATAIN6
+data_in[7] => ram_block.DATAIN7
+address[0] => ram_block.RADDR
+address[0] => ram_block.WADDR
+address[1] => ram_block.RADDR1
+address[1] => ram_block.WADDR1
+address[2] => ram_block.RADDR2
+address[2] => ram_block.WADDR2
+address[3] => ram_block.RADDR3
+address[3] => ram_block.WADDR3
+address[4] => ram_block.RADDR4
+address[4] => ram_block.WADDR4
+address[5] => ram_block.RADDR5
+address[5] => ram_block.WADDR5
+address[6] => ram_block.RADDR6
+address[6] => ram_block.WADDR6
+address[7] => ram_block.RADDR7
+address[7] => ram_block.WADDR7
+wr => ram_block.WE
+wr => data_out[7].OE
+wr => data_out[6].OE
+wr => data_out[5].OE
+wr => data_out[4].OE
+wr => data_out[3].OE
+wr => data_out[2].OE
+wr => data_out[1].OE
+wr => data_out[0].OE
+data_out[0] <= data_out[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_out[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_out[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_out[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_out[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

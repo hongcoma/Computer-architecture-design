@@ -1,0 +1,18 @@
+|lab_08_cu
+clk => out_sel~reg0.CLK
+clk => load~reg0.CLK
+clk => clear~reg0.CLK
+clk => lab08_state~1.DATAIN
+load << load~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clear << clear~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_sel << out_sel~reg0.DB_MAX_OUTPUT_PORT_TYPE
+reset => lab08_state~3.DATAIN
+reset => out_sel~reg0.ENA
+reset => clear~reg0.ENA
+reset => load~reg0.ENA
+iNOT10 => Selector0.IN2
+iNOT10 => Selector2.IN2
+iNOT10 => Selector3.IN2
+iNOT10 => Selector1.IN2
+
+

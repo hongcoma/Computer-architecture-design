@@ -1,0 +1,42 @@
+|lab_08_dp_2
+clk => iNOT10S.CLK
+clk => dp_out[0]~reg0.CLK
+clk => dp_out[0]~en.CLK
+clk => dp_out[1]~reg0.CLK
+clk => dp_out[1]~en.CLK
+clk => dp_out[2]~reg0.CLK
+clk => dp_out[2]~en.CLK
+clk => dp_out[3]~reg0.CLK
+clk => dp_out[3]~en.CLK
+clk => data[0].CLK
+clk => data[1].CLK
+clk => data[2].CLK
+clk => data[3].CLK
+clk => state~6.DATAIN
+load => data.OUTPUTSELECT
+load => data.OUTPUTSELECT
+load => data.OUTPUTSELECT
+load => data.OUTPUTSELECT
+load => state.OUTPUTSELECT
+load => state.OUTPUTSELECT
+load => state.OUTPUTSELECT
+load => state.OUTPUTSELECT
+load => state.OUTPUTSELECT
+load => process_0.IN0
+clear => data[0].ACLR
+clear => data[1].ACLR
+clear => data[2].ACLR
+clear => data[3].ACLR
+clear => state~8.DATAIN
+clear => dp_out[3].IN1
+clear => iNOT10S.ENA
+out_sel => process_0.IN1
+out_sel => Selector13.IN4
+out_sel => dp_out[3].IN1
+iNOT10 << iNOT10S.DB_MAX_OUTPUT_PORT_TYPE
+dp_out[0] <= dp_out[0].DB_MAX_OUTPUT_PORT_TYPE
+dp_out[1] <= dp_out[1].DB_MAX_OUTPUT_PORT_TYPE
+dp_out[2] <= dp_out[2].DB_MAX_OUTPUT_PORT_TYPE
+dp_out[3] <= dp_out[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

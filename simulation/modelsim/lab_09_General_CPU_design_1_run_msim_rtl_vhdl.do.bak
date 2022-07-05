@@ -1,0 +1,15 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/altera/13.1/quartus/bin64/work/lab_09_General_CPU_design_1.vhd}
+vcom -93 -work work {C:/altera/13.1/quartus/bin64/work/cu.vhd}
+vcom -93 -work work {C:/altera/13.1/quartus/bin64/work/dp.vhd}
+vcom -93 -work work {C:/altera/13.1/quartus/bin64/work/reg.vhd}
+vcom -93 -work work {C:/altera/13.1/quartus/bin64/work/mux2.vhd}
+vcom -93 -work work {C:/altera/13.1/quartus/bin64/work/increment.vhd}
+vcom -93 -work work {C:/altera/13.1/quartus/bin64/work/decrement.vhd}
+

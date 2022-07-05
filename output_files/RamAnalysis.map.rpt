@@ -1,0 +1,376 @@
+Analysis & Synthesis report for RamAnalysis
+Thu Apr 14 20:06:30 2022
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Apr 14 20:06:30 2022      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; RamAnalysis                                ;
+; Top-level Entity Name              ; RamAnalysis                                ;
+; Family                             ; Cyclone IV E                               ;
+; Total logic elements               ; 3,696                                      ;
+;     Total combinational functions  ; 3,696                                      ;
+;     Dedicated logic registers      ; 0                                          ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 25                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; RamAnalysis        ; RamAnalysis        ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 8           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ; < 0.1%      ;
+;     Processors 9-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                             ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                      ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
+; RamAnalysis.vhd                  ; yes             ; User VHDL File  ; C:/altera/13.1/quartus/bin64/work/RamAnalysis.vhd ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
+
+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimated Total logic elements              ; 3,696            ;
+;                                             ;                  ;
+; Total combinational functions               ; 3696             ;
+; Logic element usage by number of LUT inputs ;                  ;
+;     -- 4 input functions                    ; 1392             ;
+;     -- 3 input functions                    ; 2304             ;
+;     -- <=2 input functions                  ; 0                ;
+;                                             ;                  ;
+; Logic elements by mode                      ;                  ;
+;     -- normal mode                          ; 3696             ;
+;     -- arithmetic mode                      ; 0                ;
+;                                             ;                  ;
+; Total registers                             ; 0                ;
+;     -- Dedicated logic registers            ; 0                ;
+;     -- I/O registers                        ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 25               ;
+; Embedded Multiplier 9-bit elements          ; 0                ;
+; Maximum fan-out node                        ; address[3]~input ;
+; Maximum fan-out                             ; 280              ;
+; Total fan-out                               ; 12521            ;
+; Average fan-out                             ; 3.34             ;
++---------------------------------------------+------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |RamAnalysis               ; 3696 (3696)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 25   ; 0            ; |RamAnalysis        ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                  ;
++-------------------------------------------------------+---------------------+------------------------+
+; Latch Name                                            ; Latch Enable Signal ; Free of Timing Hazards ;
++-------------------------------------------------------+---------------------+------------------------+
+; ram_block~1232                                        ; rtl~0               ; yes                    ;
+; ram_block~1360                                        ; rtl~1               ; yes                    ;
+; ram_block~1104                                        ; rtl~2               ; yes                    ;
+; ram_block~1488                                        ; rtl~3               ; yes                    ;
+; ram_block~1352                                        ; rtl~4               ; yes                    ;
+; ram_block~1224                                        ; rtl~5               ; yes                    ;
+; ram_block~1096                                        ; rtl~6               ; yes                    ;
+; ram_block~1480                                        ; rtl~7               ; yes                    ;
+; ram_block~1216                                        ; rtl~8               ; yes                    ;
+; ram_block~1344                                        ; rtl~9               ; yes                    ;
+; ram_block~1088                                        ; rtl~10              ; yes                    ;
+; ram_block~1472                                        ; rtl~11              ; yes                    ;
+; ram_block~1368                                        ; rtl~12              ; yes                    ;
+; ram_block~1240                                        ; rtl~13              ; yes                    ;
+; ram_block~1112                                        ; rtl~14              ; yes                    ;
+; ram_block~1496                                        ; rtl~15              ; yes                    ;
+; ram_block~1328                                        ; rtl~16              ; yes                    ;
+; ram_block~1320                                        ; rtl~17              ; yes                    ;
+; ram_block~1312                                        ; rtl~18              ; yes                    ;
+; ram_block~1336                                        ; rtl~19              ; yes                    ;
+; ram_block~1192                                        ; rtl~20              ; yes                    ;
+; ram_block~1200                                        ; rtl~21              ; yes                    ;
+; ram_block~1184                                        ; rtl~22              ; yes                    ;
+; ram_block~1208                                        ; rtl~23              ; yes                    ;
+; ram_block~1072                                        ; rtl~24              ; yes                    ;
+; ram_block~1064                                        ; rtl~25              ; yes                    ;
+; ram_block~1056                                        ; rtl~26              ; yes                    ;
+; ram_block~1080                                        ; rtl~27              ; yes                    ;
+; ram_block~1448                                        ; rtl~28              ; yes                    ;
+; ram_block~1456                                        ; rtl~29              ; yes                    ;
+; ram_block~1440                                        ; rtl~30              ; yes                    ;
+; ram_block~1464                                        ; rtl~31              ; yes                    ;
+; ram_block~1160                                        ; rtl~32              ; yes                    ;
+; ram_block~1288                                        ; rtl~33              ; yes                    ;
+; ram_block~1032                                        ; rtl~34              ; yes                    ;
+; ram_block~1416                                        ; rtl~35              ; yes                    ;
+; ram_block~1296                                        ; rtl~36              ; yes                    ;
+; ram_block~1168                                        ; rtl~37              ; yes                    ;
+; ram_block~1040                                        ; rtl~38              ; yes                    ;
+; ram_block~1424                                        ; rtl~39              ; yes                    ;
+; ram_block~1280                                        ; rtl~40              ; yes                    ;
+; ram_block~1152                                        ; rtl~41              ; yes                    ;
+; ram_block~1024                                        ; rtl~42              ; yes                    ;
+; ram_block~1408                                        ; rtl~43              ; yes                    ;
+; ram_block~1176                                        ; rtl~44              ; yes                    ;
+; ram_block~1304                                        ; rtl~45              ; yes                    ;
+; ram_block~1048                                        ; rtl~46              ; yes                    ;
+; ram_block~1432                                        ; rtl~47              ; yes                    ;
+; ram_block~1264                                        ; rtl~48              ; yes                    ;
+; ram_block~1256                                        ; rtl~49              ; yes                    ;
+; ram_block~1248                                        ; rtl~50              ; yes                    ;
+; ram_block~1272                                        ; rtl~51              ; yes                    ;
+; ram_block~1384                                        ; rtl~52              ; yes                    ;
+; ram_block~1392                                        ; rtl~53              ; yes                    ;
+; ram_block~1376                                        ; rtl~54              ; yes                    ;
+; ram_block~1400                                        ; rtl~55              ; yes                    ;
+; ram_block~1128                                        ; rtl~56              ; yes                    ;
+; ram_block~1136                                        ; rtl~57              ; yes                    ;
+; ram_block~1120                                        ; rtl~58              ; yes                    ;
+; ram_block~1144                                        ; rtl~59              ; yes                    ;
+; ram_block~1520                                        ; rtl~60              ; yes                    ;
+; ram_block~1512                                        ; rtl~61              ; yes                    ;
+; ram_block~1504                                        ; rtl~62              ; yes                    ;
+; ram_block~1528                                        ; rtl~63              ; yes                    ;
+; ram_block~848                                         ; rtl~64              ; yes                    ;
+; ram_block~720                                         ; rtl~65              ; yes                    ;
+; ram_block~592                                         ; rtl~66              ; yes                    ;
+; ram_block~976                                         ; rtl~67              ; yes                    ;
+; ram_block~688                                         ; rtl~68              ; yes                    ;
+; ram_block~816                                         ; rtl~69              ; yes                    ;
+; ram_block~560                                         ; rtl~70              ; yes                    ;
+; ram_block~944                                         ; rtl~71              ; yes                    ;
+; ram_block~784                                         ; rtl~72              ; yes                    ;
+; ram_block~656                                         ; rtl~73              ; yes                    ;
+; ram_block~528                                         ; rtl~74              ; yes                    ;
+; ram_block~912                                         ; rtl~75              ; yes                    ;
+; ram_block~752                                         ; rtl~76              ; yes                    ;
+; ram_block~880                                         ; rtl~77              ; yes                    ;
+; ram_block~624                                         ; rtl~78              ; yes                    ;
+; ram_block~1008                                        ; rtl~79              ; yes                    ;
+; ram_block~680                                         ; rtl~80              ; yes                    ;
+; ram_block~808                                         ; rtl~81              ; yes                    ;
+; ram_block~552                                         ; rtl~82              ; yes                    ;
+; ram_block~936                                         ; rtl~83              ; yes                    ;
+; ram_block~840                                         ; rtl~84              ; yes                    ;
+; ram_block~712                                         ; rtl~85              ; yes                    ;
+; ram_block~584                                         ; rtl~86              ; yes                    ;
+; ram_block~968                                         ; rtl~87              ; yes                    ;
+; ram_block~776                                         ; rtl~88              ; yes                    ;
+; ram_block~648                                         ; rtl~89              ; yes                    ;
+; ram_block~520                                         ; rtl~90              ; yes                    ;
+; ram_block~904                                         ; rtl~91              ; yes                    ;
+; ram_block~744                                         ; rtl~92              ; yes                    ;
+; ram_block~872                                         ; rtl~93              ; yes                    ;
+; ram_block~616                                         ; rtl~94              ; yes                    ;
+; ram_block~1000                                        ; rtl~95              ; yes                    ;
+; ram_block~832                                         ; rtl~96              ; yes                    ;
+; ram_block~704                                         ; rtl~97              ; yes                    ;
+; ram_block~576                                         ; rtl~98              ; yes                    ;
+; ram_block~960                                         ; rtl~99              ; yes                    ;
+; Number of user-specified and inferred latches = 2048  ;                     ;                        ;
++-------------------------------------------------------+---------------------+------------------------+
+Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Thu Apr 14 20:06:26 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RamAnalysis -c RamAnalysis
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file ramanalysis.vhd
+    Info (12022): Found design unit 1: RamAnalysis-rtl
+    Info (12023): Found entity 1: RamAnalysis
+Info (12127): Elaborating entity "RamAnalysis" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at RamAnalysis.vhd(20): signal "ram_block" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 3721 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 3696 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4685 megabytes
+    Info: Processing ended: Thu Apr 14 20:06:30 2022
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+

@@ -1,0 +1,98 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.1\quartus\bin64\work\simulation\modelsim
+Elab_08_cudp
+Z1 w1652621250
+Z2 DPx9 cycloneiv 19 cycloneiv_atom_pack 0 22 4<Pz:n^;SZVoCfc9P95Qf3
+Z3 DPx9 cycloneiv 20 cycloneiv_components 0 22 HYeScVTJ<BN2T1NTEcFXV3
+Z4 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z5 DPx6 altera 11 dffeas_pack 0 22 oY7WPe2I:Taj0>HV`A`AH0
+Z6 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z7 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z8 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 H[E=U;zSVlD;ca@gnkzIO0
+Z10 dC:\altera\13.1\quartus\bin64\work\simulation\modelsim
+Z11 8lab_08_cudp_6_1200mv_85c_slow.vho
+Z12 Flab_08_cudp_6_1200mv_85c_slow.vho
+l0
+L36
+VL0UH;G9BBi:^zimZJOGZZ1
+Z13 OV;C;10.1d;51
+31
+Z14 !s108 1652621507.382000
+Z15 !s90 -reportprogress|300|-93|-work|work|lab_08_cudp_6_1200mv_85c_slow.vho|
+Z16 !s107 lab_08_cudp_6_1200mv_85c_slow.vho|
+Z17 o-93 -work work -O0
+Z18 tExplicit 1
+!s100 LXAiC5@@iXS;ajlMBTVDG3
+!i10b 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+Z19 DEx4 work 11 lab_08_cudp 0 22 L0UH;G9BBi:^zimZJOGZZ1
+l91
+L53
+Vb<NITo:==Rmi04`]Hf3_92
+R13
+31
+R14
+R15
+R16
+R17
+R18
+!s100 >_l69g?6_XAmHGSF9Qkl61
+!i10b 1
+Elab_08_cudp_tb
+Z20 w1652621236
+Z21 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z22 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+R7
+R8
+R10
+Z23 8C:/altera/13.1/quartus/bin64/work/lab_08_cudp_tb.vhd
+Z24 FC:/altera/13.1/quartus/bin64/work/lab_08_cudp_tb.vhd
+l0
+L6
+VM@Zn==H6^RSOJWnKkHkhN1
+!s100 <AdD3Qcj`eYkQ?aliZNk50
+R13
+31
+!i10b 1
+Z25 !s108 1652621507.453000
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.1/quartus/bin64/work/lab_08_cudp_tb.vhd|
+Z27 !s107 C:/altera/13.1/quartus/bin64/work/lab_08_cudp_tb.vhd|
+R17
+R18
+Adataflow
+R2
+R3
+R4
+R5
+R6
+R9
+R19
+R21
+R22
+R7
+R8
+DEx4 work 14 lab_08_cudp_tb 0 22 M@Zn==H6^RSOJWnKkHkhN1
+l18
+L9
+VSC0HzL6E6cQKeaG`MVJ501
+!s100 CM:PfA^MOABQ]hBFf]n9c2
+R13
+31
+!i10b 1
+R25
+R26
+R27
+R17
+R18
